@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <title>The Racing Repository</title>
+    </head>
+  <body id="main">
+    <!--
+      Part 1: Main Store Page
+
+      Requirements:
+
+      1. Header across the top must include your store's name, a logo,
+      and use a different background colour, web font, etc.  You must also include
+      a link to your contact.html page.  Your header should include info about
+      what the store is, what it sells, etc.  Use some images to try and draw
+      the user in.  NOTE: place all your site's images in the `src/images/` directory.
+
+      2. Below the header, a multi-column layout of items you can purchase in the
+      store.  You must have at least 10 items in your store, and at least 2
+      categories of items. For example, if you are selling clothing, you might
+      have categories for Men, Women, and Children, and each category would have
+      its own set of items.  Each item should include:
+      
+        - a picture
+        - the item's name/title
+        - a more complete description of the item
+        - a category (i.e., each item must belong to a category)
+        - a price.
+      
+      Each item should be its own "card" (i.e., some kind of box around each item
+      separating one from the next, with suitable whitespace between).
+
+      3. A sidebar (left or right, depending on your design) of the item layout
+      section, showing the different categories of items in your store.  If a
+      user clicks on one of the categories, use CSS and JavaScript to hide all
+      other items in the store (i.e., only show items for the chosen category).
+      Make sure you include a way to return to seeing all categories, and make it
+      obvious to the user that they are only seeing a partial list of items when
+      you filter by category (i.e., use CSS and HTML to change things somehow).
+
+      4. Below the items, a footer with the name of the store, any relevant links you
+      need to give users, as well as a small HTML form for entering an Email
+      address and clicking a "Subscribe" button to subscribe to the store's
+      newsletter. Use https://formspree.io/ to automatically submit the form to
+      your email address (i.e., when a user fills out their email address and
+      clicks submit, *you* should get that information sent to your email
+      address via formspree.io).  Make sure you setup your account on
+      https://formspree.io/.
+
+      5. Use two different Web Fonts for your store.  The titles should be different
+      from any regular text.  Use a free font service like https://fonts.google.com/
+      or any other that you choose.  You can also experiment with different font
+      sizes and colours to draw attention toward or away from various parts of
+      your design.
+
+      6. Pick a colour theme using a tool like https://colorhunt.co/ with at least
+      3 colours (primary, secondary, accent), and use them throughout your site
+      for backgrounds, borders, fonts. Your store page needs to look attractive
+      and marks will be given for good a good looking site.  No one will buy from
+      a store that looks like its owners aren't professional or don't care about
+      details.  Also make sure that the colour contrast in your site is suitable
+      for everyone to read.
+
+      7. Use modern CSS to help you achieve your layout.  For example, Flexbox
+      and CSS Grid can help you create professional looking layouts.  Here
+      are some guides to get you started:
+
+       - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+       - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout
+       
+      You are also welcome to use existing CSS libraries to help you with your layout,
+      but you must also include your own styles (i.e., you can't use a library
+      for everything in your design).
+
+      8. Make sure you don't use copyrighted materials from other sites.  If you use
+      icons, fonts, images, etc., make sure you are legally permitted to reuse them,
+      and include references to indicate where you got them. Some resources to consider:
+
+        - https://unsplash.com/ for images
+        - https://fontawesome.com/ for icons
+        - https://gallery.manypixels.co/ or https://undraw.co/illustrations for illustrations (SVG)
+
+      9. Make sure you reduce the download size of images you include in your
+      store.  Users don't want to download 10s or 100s of megabytes of data, especially
+      on mobile.  You can use an online tool like https://squoosh.app/ to help you
+      reduce images.  You will lose marks if your images aren't optimized for the web.
+       
+
+      10. Make sure you have no JavaScript or other errors in your Dev Tools Console.
+      Run your site, and test all aspects of it with the Console open, and fix
+      any issues you encounter.
+
+      11. Make sure your forms all work as they should, testing them yourself,
+      and also have someone else test it for you.  The easiest way to find bugs
+      in software is to let someone who didn't build it try to use it!
+      
+    -->
+    <header>
+      <a href="index.html"><img src="img/websitelogo.png"></a>
+      <a href="index.html"><h1>Racing Repository</h1></a>
+    </header>
+
+    <nav id="navigation">
+      <a href="index.html">Store Home</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <nav id="verticalNav">
+      <button onclick=myFunction()>Racing Wheels</button>
+      <button onclick=myFunction()>Wheel Bases</button>
+      <button onclick=myFunction()>Pedals</button>
+      <button onclick=myFunction()>Shifters</button>
+      <button onclick=myFunction()>Steering Wheels</button>
+    </nav>
+
+    <div class="wrapper">
+      <div>
+        <img src="img/cswb.jpg">
+        <h4>Fanatec ClubSport Racing Wheel v2.5 GT Forza Motorsport for Xbox One</h4>
+        <p>The ClubSport Racing Wheel v2.5 GT Forza Motorsport is the premier racing Wheel for Forza Motorsport 7. Featuring realistic, dual motor force feedback and strong,
+        full metal construction, this wheel is built to go toe to toe with your driving style. </p>
+        <p id="category">Racing Wheels</p>
+        <p>Price: $999.99</p>
+      </div>
+      <div>
+        <img src="img/tmx.jpg">
+        <h4>Thrustmaster TMX Racing Wheel</h4>
+        <p>One of the cheapest wheel sets on the market, the Thrustmaster TMX is the perfect entry level racing wheel for those who don't need all the fancy gear, and for those who don't want to spend huge amounts of money on a high end wheel.</p>
+        <p id="category">Racing Wheels</p>
+        <p>Price: $249.99</p>
+        </div>
+      <div>
+        <img src="img/g920.jpg">
+        <h4>Logitech G920 Racing Wheel</h4>
+        <p>The G920 and G29 are some of the most popular racing wheels for cosumers. Offering great force feedback through their custom gear and belt systems, as well as offering all the features sim racers want. They also come with high quality triple pedals, offering the most immersion for the lowest price.</p>
+        <p id="category">Racing Wheels</p>
+        <p>Price: $399.99</p>
+        </div>
+      <div>
+        <img src="img/csle.jpg">
+        <h4>Fanatec CSL Elite Official PS4 Wheel Base</h4>
+        <p>The entry level wheel base of Fanatec's product lineup, this CSL Elite v1.1 has gotten itself an upgrade to become fully licensed by Sony Entertainment for full support of their popular console, the PlayStation 4. Packed with features, this base will not disappoint, and with it's low price, will be great for the sim racer on a budget.</p>
+        <p id="category">Wheel Bases</p>
+        <p>Price: $399.95</p>
+      </div>
+      <div>
+        <img src="img/tx_base.jpg">
+        <h4>Thrustmaster TX Racing Wheel Servo Base</h4>
+        <p>One of the cheapest wheel sets on the market, the Thrustmaster TMX is the perfect entry level racing wheel for those who don't need all the fancy gear, and for those who don't want to spend huge amounts of money on a high end wheel.</p>
+        <p id="category">Wheel Bases</p>
+        <p>Price: $399.99</p>
+      </div>
+      <div>
+        <img src="img/csp.jpg">
+        <h4>Fanatec ClubSport Pedals V3</h4>
+        <p>The Fanatec ClubSport Pedals V3 are some of the best pedals available on the market. Featuring full metal construction, customizable pedal faces, and the all important load cell system, these pedals offer the most immersive experience possible for any sim driver.</p>
+        <p id="category">Pedals</p>
+        <p>Price: $359.95</p>
+        </div>
+      <div>
+        <img src="img/t3pa.jpg">
+        <h4>Thrustmaster T3PA Pro Pedals</h4>
+        <p>The Thrustmaster T3PA Pros are the best pedals Thrustmaster offers. Featuring full metal construction, moddable pedals, and the ability the turn the pedals in a reverse direction, the T3PA Pro pedals are some of the best pedals on the market for the price.</p>
+        <p id="category">Pedals</p>
+        <p>Price: $199.99</p>
+      </div>
+      <div>
+        <img src="img/csshifter.jpg">
+        <h4>Fanatec ClubSport Shifter SQ V1.5</h4>
+        <p>The Fanatec ClubSport SQ V1.5 is one of the best shifters on the amrket. Featuring a high quality, all metal construction, and rigid components to allow for smoother shifting, the SQ is the best shifter to pair with any Fanatec setup. The immersion will be at an all time high with this shifter great feedback when you put your car into a new gear.</p>
+        <p id="category">Shifters</p>
+        <p>Price: $249.99</p>
+        </div>
+        <div>
+          <img src="img/gshifter.jpg">
+          <h4>Logitech G Shifter</h4>
+          <p>The entry level G Shifter is the ideal shifter for those getting a G920 or G29 Racing Wheel. This shifter is great for those who want an immersive experience, while also spending the least amount of money on a shifter that's more expensive. </p>
+          <p id="category">Shifters</p>
+          <p>Price: $79.99</p>
+        </div>
+      <div>
+        <img src="img/th8a.jpg">
+        <h4>Thrustmaster TH8A Shifter</h4>
+        <p>The TH8A is one of the better H-Pattern shifters on the market. Featuring Thrustmaster's custom HEART system, the TH8A is built like a tank, being able to take all the quick shifting abuse of the average sim racer.</p>
+        <p id="category">Shifters</p>
+        <p>Price: $199.99</p>
+      </div>
+      <div>
+        <img src="img/911gt3.jpg">
+        <h4>Fanatec Clubsport Steering Wheel Porsche 911 GT3 R Suede</h4>
+        <p>The ClubSport Porsche 911 GT3R steering wheel is one of the most high quality steering wheels Fanatec has to offer. It is a pure Porsche 911 GT3R race car replica, featuring the same rim design button box, and alcantara/suede grip mixture offers the best grip possible, while also being soft on the hands for long, endurance sessions.</p>
+        <p id="category">Steering Wheels</p>
+        <p>Price: $549.99</p>
+        </div>
+      <div>
+        <img src="img/cswheel.jpg">
+        <h4>Fanatec ClubSport Steering Wheel R330</h4>
+        <p>The ClubSport R330 is a good quality steering wheel, built to be used on a fanatec wheel base, and used for the Xbox One. High quality alcantara meets blue accents, and a ClubSport Xbox Universal Hub alreayd mounted ensures pure compatibility with the console and PC alike.</p>
+        <p id="category">Steering Wheels</p>
+        <p>Price: $399.99</p>
+      </div>
+    </div>
+
+    <footer>
+      Alexandre Curto 2020
+      <form action="https://formspree.io/xaydgwvw" method="POST">
+        <input type="email" name="_replyto">
+        <input type="submit" value="Subscribe">
+      </form>
+    </footer>
+  </body>
+</html>

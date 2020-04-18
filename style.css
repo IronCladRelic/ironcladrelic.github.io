@@ -1,0 +1,263 @@
+/** Add any CSS you need to this file. */
+@import url('https://fonts.googleapis.com/css?family=Unica+One');
+
+html 
+{
+  min-height: 100%;
+  width: 1080px;
+}
+
+body 
+{
+  font-family: "Lato", sans-serif;
+  background-color: #FFFFFF;
+  overflow-y: auto;
+}
+
+footer 
+{
+  font-size: 13px;
+  margin-left: 150px;
+  bottom: 0px;
+  border: solid black 2px;
+  border-radius: 2px;
+  background-color: #0779e4;
+}
+
+a:link 
+{
+  color: white;
+  text-decoration: none;
+}
+
+a:active 
+{
+  background-color: #4cbbb9;
+}
+
+a:hover 
+{
+  color: #77d8d8;
+}
+
+a:visited 
+{
+  color: #0779e4;
+}
+
+#navigation
+{
+  text-align: center;
+  border: solid black 2px;
+  border-radius: 3px;
+  background-color: #4cbbb9;
+  color: white;  
+  padding: 12px;
+}
+
+#verticalNav 
+{
+  height: 25%;
+  width: 116px;
+  z-index: 1;
+  position: absolute;
+  margin: 10px 10px;
+  padding: 10px 0px;
+  padding-left: 8px;
+  border: solid black 2px;
+  border-radius: 3px;
+  background-color: #77d8d8;
+  color: white;  
+}
+
+#verticalNav a 
+{
+  display: block;
+  padding: 5px 5px;
+}
+
+.bodyContent 
+{
+  width: 70%;
+  margin-left: 165px;
+  padding: 10px;
+  border: solid black 2px;
+  border-radius: 3px;
+  background-color: #4cbbb9;
+}
+
+header 
+{
+  height: 100px;
+  width: 98%;
+  background-color: #0779e4;
+  margin: 10px;
+  border: solid black 2px;
+  border-radius: 3px;
+}
+
+header h1
+{
+  margin-left: 325px;
+  margin-top: -90px;
+  font-family: 'Unica One', cursive;
+  font-size: 72px;
+  color: #FFFFFF;
+}
+
+header img 
+{
+  margin-left: 25px;
+  margin-top: 5px;
+  max-width: 135px;
+}
+
+header a:active
+{
+  background-color: transparent;
+}
+
+.bodyContent h2 
+{
+  height: 50px;
+  position: initial;
+  padding-top: 5px;
+  font-size: 25px;
+  text-align: center;
+  background-color: #77d8d8;
+}
+
+label 
+{
+  width: 300px;
+  float: left;
+  clear: left;
+  text-align: right;
+}
+
+select, input 
+{
+  width: 200px;
+  float: left;
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+
+.sidePanel 
+{
+  width: 14%;
+  height: 667px;
+  float: right;
+  margin-top: -670px;
+  margin-right: -15px;
+  border: solid black 2px;
+  border-radius: 3px;
+  background-color: black;
+}
+
+fieldset 
+{
+  margin: 5px;
+}
+
+.wrapper 
+{
+  display: grid;
+  width: 70%;
+  margin-top: 10px;
+  margin-left: 165px;
+  padding: 10px;
+  border: solid black 2px;
+  border-radius: 3px;
+  background-color: #77d8d8;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.wrapper img
+{
+  margin-left: 25px;
+  margin-top: 5px;
+  max-width: 200px;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) 
+{
+  // #verticalNav {width: 200px; float: left;}
+  //html {margin-left: 216px;}
+}
+ 
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) 
+{
+  
+}
+ 
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+/* STYLES GO HERE */
+}
+ 
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/* STYLES GO HERE */
+}
+ 
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+/* STYLES GO HERE */
+}
+ 
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+/* STYLES GO HERE */
+}
+ 
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+/* STYLES GO HERE */
+}
+ 
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+/* STYLES GO HERE */
+}
+ 
+/* iPhone 5 (portrait &amp; landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+/* STYLES GO HERE */
+}
+ 
+/* iPhone 5 (landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+/* STYLES GO HERE */
+}
+ 
+/* iPhone 5 (portrait)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+/* STYLES GO HERE */
+}
